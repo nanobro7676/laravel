@@ -16,4 +16,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(201);
     }
+
+    public function test_endpoint_hello(): void
+    {
+        $response = $this->get('/test');
+
+        $response->assertStatus(201);
+    }
 }
